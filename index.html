@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/5cd4730d1a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- <link rel="shortcut icon" type="image" href="./Images/Logo.jpg"> -->
+    <title>Your TO DO List</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <div class="container">
+        <div class="header">
+            <p class="heading">Your Bucket</p>
+            <div class="add_new_item">
+                <p class="add_new_item_text">ADD</p>
+                <i class="fa-solid fa-square-plus fa-3x add_new_item_btn" id="get_one_more_btn"></i>
+            </div>
+        </div>
+
+        <div id="all_input_area">
+            <div id="add_note">
+                <p class="label_of_note">Add Note</p>
+                <textarea id="enter_note"></textarea>
+            </div>
+
+            <span class="vspace10px"></span>
+
+            <div id="add_link_and_time">
+                <div class="link_and_date">
+                    <p class="label_of_note">Add Link</p>
+                    <input type="text" id="enter_link">
+                </div>
+
+                <div class="link_and_date">
+                    <p class="label_of_note">Add Date & Time</p>
+                    <input type="text" id="enter_time">
+                </div>
+            </div>
+
+            <button id="add_in_bucket">Add in bucket</button>
+        </div>
+
+        <p id="clear_all_button">Clear All</p>
+        <div id="bucket_list_container">
+        </div>
+    </div>
+</body>
+
+</html>
